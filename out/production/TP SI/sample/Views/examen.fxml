@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.ExamenController">
+   <children>
+      <Button layoutX="31.0" layoutY="23.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="60.0" text="retour" />
+      <Label layoutX="46.0" layoutY="86.0" text="matricule" />
+      <Label layoutX="36.0" layoutY="151.0" text="code module" />
+      <TextField fx:id="matriculeField" layoutX="145.0" layoutY="82.0" />
+      <TextField fx:id="codeField" layoutX="145.0" layoutY="147.0" />
+      <Button layoutX="357.0" layoutY="82.0" mnemonicParsing="false" onAction="#rechercheButtonClicked" text="Recherche" />
+      <Label layoutX="57.0" layoutY="226.0" text="Note" />
+      <TextField fx:id="noteField" layoutX="145.0" layoutY="222.0" />
+      <Button layoutX="294.0" layoutY="311.0" mnemonicParsing="false" onAction="#ajouterButtonClicked" prefHeight="26.0" prefWidth="71.0" text="Ajouter" />
+      <Button layoutX="194.0" layoutY="312.0" mnemonicParsing="false" onAction="#supprimerButtonClicked" text="Supprimer" />
+      <Button layoutX="96.0" layoutY="311.0" mnemonicParsing="false" onAction="#modifierButtonClicked" prefHeight="26.0" prefWidth="71.0" text="Modifier" />
+   </children>
+</AnchorPane>

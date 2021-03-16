@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="473.0" prefWidth="543.0" style="-fx-background-color: #00000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.ModuleController">
+   <children>
+      <Label layoutX="64.0" layoutY="93.0" text="Code module">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="65.0" layoutY="166.0" text="Nom module">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="72.0" layoutY="240.0" text="Coefficient">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <TextField fx:id="codeField" layoutX="175.0" layoutY="89.0" promptText="code module" style="-fx-border-color: #51c2d5; -fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="nomField" layoutX="175.0" layoutY="162.0" promptText="nom" style="-fx-border-color: #51c2d5; -fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="coefficientField" layoutX="175.0" layoutY="236.0" promptText="coef" style="-fx-border-color: #51c2d5; -fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px;" />
+      <Button layoutX="208.0" layoutY="386.0" mnemonicParsing="false" onAction="#supprimerButtonClicked" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: #dd2c00;" text="Supprimer">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button layoutX="97.0" layoutY="386.0" mnemonicParsing="false" onAction="#modifierButtonClicked" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: #ffa41b;" text="Modifier">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button layoutX="321.0" layoutY="386.0" mnemonicParsing="false" onAction="#ajouterButtonClicked" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: #00af91;" text="Ajouter">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button layoutX="404.0" layoutY="89.0" mnemonicParsing="false" onAction="#rechercheButtonClicked" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: #51c2d5;" text="Rechercher">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button layoutX="20.0" layoutY="21.0" mnemonicParsing="false" onAction="#retourButtonClicked" prefHeight="26.0" prefWidth="39.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <FontAwesomeIconView glyphName="BACKWARD" size="25" />
+         </graphic></Button>
+      <Label layoutX="58.0" layoutY="312.0" text="Code enseignant">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="enseignantField" layoutX="175.0" layoutY="308.0" promptText="code enseignant" style="-fx-background-color: transparent; -fx-border-color: #51c2d5; -fx-border-width: 0px 0px 2px 0px;" />
+   </children>
+</AnchorPane>

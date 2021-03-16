@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="503.0" prefWidth="560.0" style="-fx-background-color: #00000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.EtudiantController">
+   <children>
+      <TextField fx:id="matriculeField" layoutX="193.0" layoutY="89.0" promptText="matricule" style="-fx-border-color: #51c2d5; -fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px 0px;" />
+      <TextField fx:id="nomField" layoutX="193.0" layoutY="163.0" promptText="nom" style="-fx-background-color: transparent; -fx-border-color: #51c2d5; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="prenomField" layoutX="193.0" layoutY="220.0" promptText="prenom" style="-fx-background-color: transparent; -fx-border-color: #51c2d5; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="sectionField" layoutX="192.0" layoutY="272.0" prefHeight="26.0" prefWidth="150.0" promptText="section" style="-fx-background-color: transparent; -fx-border-color: #51c2d5; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="groupeField" layoutX="193.0" layoutY="321.0" promptText="groupe" style="-fx-background-color: transparent; -fx-border-color: #51c2d5; -fx-border-width: 0px 0px 2px 0px;" />
+      <Label layoutX="55.0" layoutY="94.0" text="Matricule">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="54.0" layoutY="177.0" text="Nom">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="54.0" layoutY="234.0" text="Prenom">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="55.0" layoutY="286.0" text="Section">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="55.0" layoutY="335.0" text="Groupe">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="ajouterButton" layoutX="370.0" layoutY="429.0" mnemonicParsing="false" onAction="#ajouterButtonClicked" prefHeight="26.0" prefWidth="86.0" style="-fx-background-color: #00af91;" text="Ajouter">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button fx:id="modifierButton" layoutX="96.0" layoutY="429.0" mnemonicParsing="false" onAction="#modifierButtonClicked" prefHeight="26.0" prefWidth="86.0" style="-fx-background-color: #ffa41b;" text="modifier">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button fx:id="chercherButton" layoutX="406.0" layoutY="89.0" mnemonicParsing="false" onAction="#chercherButtonClicked" prefHeight="26.0" prefWidth="86.0" style="-fx-background-color: #51c2d5;" text="Recherhcer">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button fx:id="supprimerButton" layoutX="237.0" layoutY="429.0" mnemonicParsing="false" onAction="#supprimerButtonClicked" prefHeight="26.0" prefWidth="86.0" style="-fx-background-color: #dd2c00;" text="Supprimer">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="retourButton" layoutX="21.0" layoutY="14.0" mnemonicParsing="false" onAction="#retourButtonClicked" style="-fx-background-color: transparent;">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="BACKWARD" size="25" />
+         </graphic></Button>
+   </children>
+</AnchorPane>

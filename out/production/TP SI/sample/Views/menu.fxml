@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="608.0" prefWidth="894.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.MenuController">
+   <children>
+      <Pane layoutX="-1.0" prefHeight="156.0" prefWidth="894.0" style="-fx-background-color: #51c2d5;">
+         <children>
+            <Label layoutX="271.0" layoutY="56.0" text="GESTION SCHOLARITE" textFill="#191919">
+               <font>
+                  <Font name="System Bold" size="50.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="118.0" fitWidth="128.0" layoutX="106.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../1279px-Font_Awesome_5_solid_school.svg.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <GridPane hgap="10.0" layoutX="179.0" layoutY="221.0" prefHeight="255.0" prefWidth="518.0" vgap="5.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button id="button" fx:id="etudiantButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#etudiantButtonClicked" prefHeight="117.0" prefWidth="265.0" stylesheets="@../CSS/style.css" text="Gestion Etudiant">
+               <graphic>
+                  <FontAwesomeIconView fill="#51c2d5" glyphName="USER" size="50" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="moduleButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#moduleButtonClicked" prefHeight="117.0" prefWidth="265.0" stylesheets="@../CSS/style.css" text="Gestion Module" GridPane.columnIndex="1">
+               <graphic>
+                  <FontAwesomeIconView fill="#51c2d5" glyphName="BOOK" size="50" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="examenButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#examenButtonClicked" prefHeight="117.0" prefWidth="265.0" stylesheets="@../CSS/style.css" text="Gestion Examen" GridPane.columnIndex="2">
+               <graphic>
+                  <FontAwesomeIconView fill="#51c2d5" glyphName="CALENDAR" size="50" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="listeEtudiantButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#listEtudiantButtonClicked" prefHeight="117.0" prefWidth="265.0" stylesheets="@../CSS/style.css" text="Liste Etudiant" GridPane.rowIndex="1">
+               <graphic>
+                  <FontAwesomeIconView fill="#51c2d5" glyphName="LIST" size="50" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#certificatButtonClicked" prefHeight="117.0" prefWidth="265.0" stylesheets="@../CSS/style.css" text="Certificat Scolarite" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <graphic>
+                  <FontAwesomeIconView fill="#51c2d5" glyphName="FILE" size="50" wrappingWidth="42.85714340209961" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="exitButton" contentDisplay="TOP" mnemonicParsing="false" onAction="#exitButtonClicked" prefHeight="117.0" prefWidth="265.0" stylesheets="@../CSS/style.css" text="Exit" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <graphic>
+                  <FontAwesomeIconView fill="#51c2d5" glyphName="TIMES" size="50" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
